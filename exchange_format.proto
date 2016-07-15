@@ -15,8 +15,9 @@ message VehicleMessage {
 
 	// unique but anonymous vehicle ID
 	required int64 vehicleId = 1;
+	required bool onTramRail = 2;
 
-	repeated VehicleLocation locations = 2;
+	repeated VehicleLocation locations = 3;
 }
 
 message VehicleMessageEnvelope {
